@@ -52,9 +52,6 @@
         console.log(antonietta.child.speakReassurance('robot'));
 
 
-        
-
-
 
 /////------------------------------------QUESTIONS 1----------------------------/////
 

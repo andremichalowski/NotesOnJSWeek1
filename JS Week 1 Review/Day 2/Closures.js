@@ -5,36 +5,40 @@
 // // // The outer scope can be a parent function, or the top level of the script.
 
 // // Closure 1: //??? is this really a closure since it's an arrow function
-// let shoes = ['Adidas', 'Puma', 'Nike', 'Reebok', 'Asics']
 
-// const startsWithA = shoes.filter((shoe) => shoe.startsWith("A"));
+// let shoesclosures = ['Adidas', 'Puma', 'Nike', 'Reebok', 'Asics'];
+// const startsWithA = shoesclosures.filter((shoe) => let letter = ['a']; shoe.startsWith(letter);
 
-// console.log(startsWithA);
+// console.log(startsWithA); ///??? What's going on that this wont work
 
 // // Closure 2:
-// function login() {
-//   let username = 'Andre';
-//   function displayUser() {
-//     console.log("Thanks for logging in " + username + "!" + " would you like to see your daily reports!");
-//   }
-//   return displayUser();
-// }
-// login();
+function login() {
+  let username = 'Andre';
+  function displayUser() {
+    console.log("Thanks for logging in " + username + "!" + " would you like to see your daily reports!");
+  }
+  return displayUser();
+}
+login();
 
 // // Closure 3:
-// function uselesspush() {      ///Can we do a review of examples of all the kind of functions that are annonymous, or declarations, or expressions.
-//   let pushbox = [];
+
+// let pushbox = [];
+// function uselesspush() {      ///???Can we do a review of examples of all the kind of functions that are annonymous, or declarations, or expressions.
 //   let name = 'Penguin';
-//   function nameToArray() {
+//   function nameToArray(name) {
 //     pushbox.push(name);
 //   }
-//   console.log(pushbox(0));
+//   console.log(pushbox);
 //   return (`Why's is there a ${this.name} in the array`);
 // }
 // uselesspush();
 // // Can you help me edit this function.
 
 
+
+///??? Stretch Problems ???///
+//************** */
 // /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
@@ -75,9 +79,10 @@
 // const newCounter = counter();
 // console.log(newCounter());
 // console.log(newCounter());
-// // Example usage: const newCounter = counter();	// Example usage: const newCounter = counter();
-// // newCounter(); // 1	// newCounter(); // 1
-// // newCounter(); // 2	// newCounter(); // 2
+// Example usage: const newCounter = counter();	
+// // Example usage: const newCounter = counter();
+// newCounter(); // 1	// newCounter(); // 1
+// newCounter(); // 2	// newCounter(); // 2
 
 
 // // ==== Challenge 3: Create a counter function with an object that can increment and decrement ====	// ==== Challenge 3: Create a counter function with an object that can increment and decrement ====
